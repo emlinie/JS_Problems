@@ -1,0 +1,29 @@
+/**
+ * Created by Satori on 11/26/2015.
+ */
+/**
+ * Write a function that splits an array (first argument) into groups the length of size (second argument) and returns
+ * them as a multidimensional array.
+ *
+ * http://www.freecodecamp.com/challenges/bonfire-chunky-monkey
+ **/
+
+
+function chunk(arr, size) {
+    var result;
+
+    while (arr.length > 0)
+    {
+        var i;
+        for (i =0; i < size; ++i )
+        {
+
+        }
+    }
+
+
+    // Break it up.
+    return result;
+}
+
+console.log(chunk(["a", "b", "c", "d"], 2));
