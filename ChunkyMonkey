@@ -10,19 +10,18 @@
 
 
 function chunk(arr, size) {
-    var result;
+    var result = [];
 
-    while (arr.length > 0)
+    while (arr.length > size)
     {
-        var i;
-        for (i =0; i < size; ++i )
-        {
-
-        }
+        result.push(arr.splice(0, size));
     }
 
+    if(arr.length > 0)
+    {
+        result.push(arr);
+    }
 
-    // Break it up.
     return result;
 }
 
