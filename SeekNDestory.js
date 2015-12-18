@@ -1,5 +1,5 @@
 /**
- * Created by chie on 12/15/2015.
+ * Created by @emlinie on 12/15/2015.
  * You will be provided with an initial array (the first argument in the destroyer function), followed by one or more
  * arguments. Remove all elements from the initial array that are of the same value as these arguments.
  *
@@ -10,12 +10,12 @@ function destroyer(arr) {
     // Remove all the values
 
     var args = Array.prototype.slice.call(arguments);
+    var arr = args[0];
+    args.splice(0, 1);
 
-    return arr;
+    return arr.filter(function (e) {
+        return args.indexOf(e) === -1;
+    });
 }
 
-function isSame(val) {
-
-}
-
-destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3));
